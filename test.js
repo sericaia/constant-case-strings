@@ -22,4 +22,8 @@ describe('snake case', function () {
     assert.equal(snakeCase('TestString'), 'test_string');
     assert.equal(snakeCase('TestString1_2_3'), 'test_string_1_2_3');
   });
+
+  it('should support non-latin characters', function () {
+    assert.equal(snakeCase('My Entrée'), 'my_entrée');
+  });
 });
