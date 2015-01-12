@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "Snake case a string",
   "main": "snake-case.js",
+  "files": [
+    "snake-case.js",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec"
   },
