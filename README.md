@@ -22,6 +22,8 @@ var snakeCase = require('snake-case');
 snakeCase('string');        //=> "string"
 snakeCase('camelCase');     //=> "camel_case"
 snakeCase('sentence case'); //=> "sentence_case"
+
+snakeCase('MY STRING', 'tr'); //=> "my_strıng"
 ```
 
 ## License
