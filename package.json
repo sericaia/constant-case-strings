@@ -31,10 +31,10 @@
   "homepage": "https://github.com/blakeembrey/snake-case",
   "devDependencies": {
     "istanbul": "^0.3.0",
-    "mocha": "^1.18.2",
-    "pre-commit": "0.0.9"
+    "mocha": "^2.1.0",
+    "pre-commit": "^1.0.1"
   },
   "dependencies": {
-    "sentence-case": "^1.1.1"
+    "sentence-case": "^1.1.2"
   }
 }
