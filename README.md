@@ -11,20 +11,20 @@ Supports Unicode (non-ASCII characters) and non-string entities, such as objects
 
 ## Installation
 
-```bash
+```
 npm install snake-case --save
 ```
 
 ## Usage
 
 ```javascript
-var snakeCase = require('snake-case');
+var snakeCase = require('snake-case')
 
-snakeCase('string');        //=> "string"
-snakeCase('camelCase');     //=> "camel_case"
-snakeCase('sentence case'); //=> "sentence_case"
+snakeCase('string')        //=> "string"
+snakeCase('camelCase')     //=> "camel_case"
+snakeCase('sentence case') //=> "sentence_case"
 
-snakeCase('MY STRING', 'tr'); //=> "my_strıng"
+snakeCase('MY STRING', 'tr') //=> "my_strıng"
 ```
 
 ## License

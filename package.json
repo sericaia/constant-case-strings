@@ -8,7 +8,10 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "istanbul cover _mocha -- -R spec"
+    "lint": "standard",
+    "test-std": "mocha -- -R spec --bail",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --bail",
+    "test": "npm run lint && npm run test-cov"
   },
   "repository": {
     "type": "git",
@@ -32,7 +35,8 @@
   "devDependencies": {
     "istanbul": "^0.3.0",
     "mocha": "^2.1.0",
-    "pre-commit": "^1.0.1"
+    "pre-commit": "^1.0.1",
+    "standard": "^3.3.0"
   },
   "dependencies": {
     "sentence-case": "^1.1.2"
