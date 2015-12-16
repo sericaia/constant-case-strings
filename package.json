@@ -1,6 +1,6 @@
 {
   "name": "snake-case",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Snake case a string",
   "main": "snake-case.js",
   "typings": "snake-case.d.ts",
