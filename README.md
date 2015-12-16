@@ -27,6 +27,10 @@ snakeCase('sentence case') //=> "sentence_case"
 snakeCase('MY STRING', 'tr') //=> "my_strıng"
 ```
 
+## Typings
+
+Includes a [TypeScript definition](snake-case.d.ts).
+
 ## License
 
 MIT
