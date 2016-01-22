@@ -1,33 +1,37 @@
 /* global describe, it */
 var assert = require('assert')
-var snakeCase = require('./')
+var constantCaseStrings = require('./')
 
-describe('snake case', function () {
-  it('should snake case a single word', function () {
-    assert.equal(snakeCase('test'), 'test')
-    assert.equal(snakeCase('TEST'), 'test')
+describe('constant case', function () {
+  it('should constant case a single word', function () {
+    assert.equal(constantCaseStrings('test'), 'TEST')
+    assert.equal(constantCaseStrings('TEST'), 'TEST')
   })
 
-  it('should snake case regular sentence cased strings', function () {
-    assert.equal(snakeCase('test string'), 'test_string')
-    assert.equal(snakeCase('Test String'), 'test_string')
+  it('should constant case regular sentence cased strings', function () {
+    assert.equal(constantCaseStrings('test string'), 'TEST_STRING')
+    assert.equal(constantCaseStrings('Test String'), 'TEST_STRING')
   })
 
-  it('should snake case non-alphanumeric separators', function () {
-    assert.equal(snakeCase('dot.case'), 'dot_case')
-    assert.equal(snakeCase('path/case'), 'path_case')
+  it('should constant case non-alphanumeric separators', function () {
+    assert.equal(constantCaseStrings('dot.case'), 'DOT_CASE')
+    assert.equal(constantCaseStrings('path/case'), 'PATH_CASE')
   })
 
-  it('should snake case snake cased strings', function () {
-    assert.equal(snakeCase('TestString'), 'test_string')
-    assert.equal(snakeCase('TestString1_2_3'), 'test_string_1_2_3')
+  it('should constant case constant cased strings', function () {
+    assert.equal(constantCaseStrings('TestString'), 'TEST_STRING')
+    assert.equal(constantCaseStrings('TestString1_2_3'), 'TEST_STRING1_2_3')
+  })
+
+  it('should constant case constant cased strings with integers', function () {
+    assert.equal(constantCaseStrings('sentence case12order'), 'SENTENCE_CASE12_ORDER')
   })
 
   it('should support non-latin characters', function () {
-    assert.equal(snakeCase('My Entrée'), 'my_entrée')
+    assert.equal(constantCaseStrings('My Entrée'), 'MY_ENTRÉE')
   })
 
   it('should support locales', function () {
-    assert.equal(snakeCase('MY STRING', 'tr'), 'my_strıng')
+    assert.equal(constantCaseStrings('MY STRING', 'tr'), 'MY_STRING')
   })
 })

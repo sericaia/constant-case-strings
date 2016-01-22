@@ -1,12 +1,12 @@
 {
-  "name": "snake-case",
-  "version": "1.1.2",
-  "description": "Snake case a string",
-  "main": "snake-case.js",
-  "typings": "snake-case.d.ts",
+  "name": "constant-case-strings",
+  "version": "2.0.0",
+  "description": "constant case strings",
+  "main": "constant-case-strings.js",
+  "typings": "constant-case-strings.d.ts",
   "files": [
-    "snake-case.js",
-    "snake-case.d.ts",
+    "constant-case-strings.js",
+    "constant-case-strings.d.ts",
     "LICENSE"
   ],
   "scripts": {
@@ -17,23 +17,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/blakeembrey/snake-case.git"
+    "url": "git://github.com/sericaia/constant-case-strings.git"
   },
   "keywords": [
-    "snake",
+    "constant",
     "case",
+    "strings",
     "underscore"
   ],
   "author": {
-    "name": "Blake Embrey",
-    "email": "hello@blakeembrey.com",
-    "url": "http://blakeembrey.me"
+    "name": "sericaia"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/blakeembrey/snake-case/issues"
+    "url": "https://github.com/sericaia/constant-case-strings/issues"
   },
-  "homepage": "https://github.com/blakeembrey/snake-case",
+  "homepage": "https://github.com/sericaia/constant-case-strings",
   "devDependencies": {
     "istanbul": "^0.3.0",
     "mocha": "^2.1.0",
@@ -41,6 +40,7 @@
     "standard": "^3.3.0"
   },
   "dependencies": {
-    "sentence-case": "^1.1.2"
+    "sentence-case-without-digits": "^2.0.0",
+    "upper-case": "^1.1.3"
   }
 }
